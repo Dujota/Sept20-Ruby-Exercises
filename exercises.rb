@@ -74,3 +74,24 @@ artists.each do |name, blurb|
   print "i think #{name} is great"
   puts
 end
+puts
+
+#3
+puts "3-1"
+puts artists[0..1]
+puts
+
+puts "3-2"
+fav_movies.each do |name, year|
+  puts
+  puts "#{name} was released #{year}"
+  puts
+end
+
+print ages.sort.reverse!
+puts
+puts
+
+
+fav_movies[:beauty_and_the_beast] = "1991 & 2017"
+puts fav_movies[:beauty_and_the_beast]
