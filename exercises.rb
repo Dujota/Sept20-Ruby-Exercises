@@ -28,7 +28,7 @@ fav_movies = {
 }
 
 city_pops = {
-  :toronto => "2.5 million",
+  :toronto => "2.9 million",
   :nyc => "10 million",
   :moscow => "13 million"
 }
@@ -48,3 +48,29 @@ puts
 names[:new_baby] = "0"
 
 puts fav_movies[:lotr]
+
+
+#2
+puts "2-1"
+print fav_colors.last
+puts
+
+puts "2-2"
+city_pops[:montreal] ="1.4 million"
+puts
+
+puts "2-3"
+coin_flip.reverse!
+puts
+
+puts "2-4"
+print city_pops[:nyc]
+puts
+puts
+
+puts "2-5"
+artists.each do |name, blurb|
+  puts
+  print "i think #{name} is great"
+  puts
+end
