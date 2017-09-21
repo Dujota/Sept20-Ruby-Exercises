@@ -28,9 +28,9 @@ fav_movies = {
 }
 
 city_pops = {
-  :toronto => "2.9 million",
-  :nyc => "10 million",
-  :moscow => "13 million"
+  :toronto => 2,
+  :nyc => 10,
+  :moscow => 13
 }
 
 names = {
@@ -45,7 +45,7 @@ print fav_colors[0]
 puts
 print names.sort
 puts
-names[:new_baby] = "0"
+names[:new_baby] = 0
 
 puts fav_movies[:lotr]
 
@@ -56,7 +56,7 @@ print fav_colors.last
 puts
 
 puts "2-2"
-city_pops[:montreal] ="1.4 million"
+city_pops[:montreal] = 1
 puts
 
 puts "2-3"
@@ -116,8 +116,42 @@ artists.pop
 puts artists
 
 puts
-city_pops[:toronto] = "2.6 million"
+city_pops[:toronto] = 3
 puts city_pops
 puts
 
 #5
+#5-1
+# method 1
+total = 0
+city_pops.values.map do |value|
+  total = total + value
+end
+puts total
+
+
+puts city_pops.map { |city, population| population  }.sum
+
+puts city_pops.map {|city, population| population}.reduce(:+)
+
+#5-2
+puts '-'*30
+names.select do |name, age|
+  if age < 30
+    puts "#{name} is young."
+  else
+    puts "#{name} is old"
+  end
+end
+
+#5-3
+puts fav_colors.last(2)
+
+#5-4
+ages.each do |age|
+  age = age + 1
+  puts "#{age}"
+end
+
+puts '-'*33
+puts fav_colors.push('green','yellow')
