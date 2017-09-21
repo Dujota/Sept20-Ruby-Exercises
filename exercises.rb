@@ -34,9 +34,9 @@ city_pops = {
 }
 
 names = {
-  :daniel => "26",
-  :denis => "33",
-  :olga => "35"
+  :daniel => 26,
+  :denis => 33,
+  :olga => 35
 }
 # ex 1
 print coin_flip
@@ -95,3 +95,27 @@ puts
 
 fav_movies[:beauty_and_the_beast] = "1991 & 2017"
 puts fav_movies[:beauty_and_the_beast]
+
+#4
+less_than_30 = ages.select do |age|
+  age < 30
+end
+
+puts
+print less_than_30.to_s
+puts
+
+puts
+p ages.max
+puts
+
+puts coin_flip.count("yes")
+
+puts
+artists.pop
+puts artists
+
+puts
+city_pops[:toronto] = "2.6 million"
+puts city_pops
+puts
