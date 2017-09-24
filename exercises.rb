@@ -155,3 +155,107 @@ end
 
 puts '-'*33
 puts fav_colors.push('green','yellow')
+
+
+# 6
+#6-a - composing arrays
+puts '-'*33
+movie_year_release = {
+1999 => ['The Matrix', 'Star Wars: Episode 1', 'The Mummy'],
+2009 => ['Avatar', 'Star Trek', 'District 9'],
+2019 => ['How to Train Your Dragon 3', 'Toy Story 4', 'Star Wars: Episode 9']
+}
+
+puts movie_year_release
+
+puts '-'*33
+phone_buttons = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9],
+  ['*', 0, '#']
+ ]
+
+ print phone_buttons
+ puts
+
+
+ puts '-'*33
+
+ countries_info = [
+   {
+     :name => 'cuba',
+     :continent => 'North America',
+     :island => true
+
+   },
+   {
+     :name => 'Canada',
+     :continent => 'North America',
+     :island => false
+   },
+   {
+     :name => 'Greece',
+     :continent => 'Europe',
+     :island => true
+   }
+ ]
+
+ puts countries_info
+ puts
+
+# 6-1
+
+20.times { puts "I will not skateboard in the halls" }
+
+puts '-'*33
+
+#6-2
+no_skate = []
+
+20.times {no_skate.push "I will not skateboard in the halls"}
+
+# alternate method:
+no_skate2 = []
+20.times do
+no_skate2.push('repeats 20 times')
+end
+
+puts no_skate
+puts '-'*33
+
+# 6-3
+numers_1_to_50 = (1..50).to_a
+print numers_1_to_50
+puts '-'*33
+
+#6-4
+sum = 0
+numers_1_to_50.each do |value|
+  sum = sum + value
+end
+puts sum
+puts '-'*33
+
+# method 1
+numers_1_to_50v2 = []
+3.times { numers_1_to_50v2.push((1..50).to_a) }
+puts
+print numers_1_to_50v2.flatten.sort
+
+# method2
+puts '-'*33
+numers_1_to_50v3 = []
+ (1..50).to_a.each do |num|
+   3.times{ numers_1_to_50v3.push(num) }
+ end
+puts numers_1_to_50v3
+
+
+# 6-6
+
+not_island = countries_info.reject do |is_island|
+  is_island[:island]
+end
+
+p not_island
