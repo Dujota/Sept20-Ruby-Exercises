@@ -285,7 +285,7 @@ grocery_list.map { |item| puts "* #{item}"}
 puts
 
 def print_list (list)
-list.map { |item| puts "* #{item}"}
+list.each { |item| puts "* #{item}"}
 end
 
 print_list(grocery_list)
@@ -295,4 +295,26 @@ grocery_list.push('rice')
 print_list(grocery_list)
 puts
 
-puts "you have a total of #{grocery_list.length} to pick up"
+puts "you have a total of #{grocery_list.length} items to pick up fromn your grocery list"
+
+p grocery_list.include?("bananas")
+
+def is_there_bananas(check)
+  if check.include?("bananas")
+    puts "You dont need to get bananas today"
+  else
+    puts "grab some bananas"
+  end
+end
+
+is_there_bananas(grocery_list)
+puts
+puts " the second item on our list is #{grocery_list[1]} "
+puts
+
+print_list(grocery_list).sort
+
+
+puts
+grocery_list.delete("salmon")
+print_list(grocery_list)
