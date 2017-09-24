@@ -16,7 +16,7 @@ end
 
 # alternative to not storing the range in a variable is :
 
-1..100).each do |num|
+(1..100).each do |num|
   if num % 3 == 0
     puts "Bit"
   elsif num % 5 == 0
