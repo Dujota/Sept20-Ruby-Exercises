@@ -279,3 +279,20 @@ puts
 
 # ex 8
 grocery_list = ['carrots', 'toilet paper', 'apples', 'salmon']
+
+puts
+grocery_list.map { |item| puts "* #{item}"}
+puts
+
+def print_list (list)
+list.map { |item| puts "* #{item}"}
+end
+
+print_list(grocery_list)
+
+puts
+grocery_list.push('rice')
+print_list(grocery_list)
+puts
+
+puts "you have a total of #{grocery_list.length} to pick up"
