@@ -272,3 +272,10 @@ end
 
 p costs_sum(costs2)
 p costs_sum(costs1)
+puts '-'*33
+puts
+
+
+
+# ex 8
+grocery_list = ['carrots', 'toilet paper', 'apples', 'salmon']
