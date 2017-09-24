@@ -257,5 +257,18 @@ puts numers_1_to_50v3
 not_island = countries_info.reject do |is_island|
   is_island[:island]
 end
-
+puts '-'*33
 p not_island
+puts '-'*33
+
+#7
+costs1 = [250, 7.95, 30.05, 16.50]
+costs2 = [145, 90, 88.88, 10.0]
+def costs_sum(array)
+  sum = 0
+  array.each { |cost| sum += cost }
+  sum
+end
+
+p costs_sum(costs2)
+p costs_sum(costs1)
